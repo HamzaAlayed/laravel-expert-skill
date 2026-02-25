@@ -8,7 +8,7 @@ The most comprehensive Laravel skill available — covers the entire Laravel eco
 npx skills add HamzaAlayed/laravel-expert-skill
 ```
 
-## What It Covers (16 Reference Files)
+## What It Covers (17 Reference Files)
 
 | Reference | Topics |
 |---|---|
@@ -21,11 +21,11 @@ npx skills add HamzaAlayed/laravel-expert-skill
 | `references/reactjs.md` | Inertia.js, typed props, `useForm`, shared data, SSR, Zustand, compound components |
 | `references/tailwindcss.md` | Tailwind v4, `@theme` design system, CVA typed variants, dark mode, production optimization |
 | `references/vite.md` | Laravel Vite plugin, path aliases, code splitting, HMR, bundle analysis, Ziggy typed routes |
-| `references/filament.md` | Filament 3 admin panels, resources, forms, tables, widgets, relation managers, multi-tenancy |
 | `references/broadcasting.md` | Laravel Reverb, Echo, private/presence channels, SSE, model broadcasting, notifications |
 | `references/security.md` | OWASP Top 10, CSP, gates/policies, encryption, audit logging, SSRF prevention, rate limiting |
-| `references/testing-advanced.md` | Architecture fitness tests, mutation testing (Infection), Dusk browser tests, contract/snapshot tests |
-| `references/packages.md` | Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development |
+| `references/testing.md` | Unit, feature, mocking (mail/jobs/events/HTTP), Dusk, mutation testing, architecture tests, contracts |
+| `references/package-development.md` | Service providers, facades, Testbench, config/migrations, CI matrix, Packagist publishing |
+| `references/packages.md` | Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags |
 | `references/ai.md` | Prism multi-provider LLM, streaming, tool calling, structured output, embeddings, RAG, queued AI jobs |
 | `references/mcp.md` | Build Laravel as an MCP server: tools, resources, prompts, HTTP/stdio transport, Claude integration |
 
@@ -41,7 +41,9 @@ npx skills add HamzaAlayed/laravel-expert-skill
 - Admin: Filament 3 panels, resources, widgets, multi-tenancy
 - Security: OWASP hardening, CSP, policies, encryption, audit logs
 - Testing: Architecture tests, mutation testing, Dusk, contract tests
-- Ecosystem: Spatie packages, Scout/search, Cashier, Pennant, package dev
+- Ecosystem: Spatie packages, Scout/search, Cashier, Pennant
+- Testing: Unit, feature, Dusk, mutation, architecture tests, mocking, contracts
+- Package Development: Service providers, Testbench, Packagist, CI, versioning
 - AI: Prism LLM client, streaming, tool calling, RAG pipelines, embeddings
 - MCP: Expose Laravel as an MCP server for Claude Code / Claude Desktop
 

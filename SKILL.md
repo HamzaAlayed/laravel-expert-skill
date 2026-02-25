@@ -1,6 +1,6 @@
 ---
 name: laravel-expert
-description: Use for any advanced Laravel topic: DDD, CQRS, event sourcing, Octane, Redis at scale, Filament admin panels, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite, mutation testing, Dusk, Spatie packages, Scout, Cashier, Pennant, AI integration (Prism, embeddings, RAG, tool calling, streaming), or building MCP servers exposing Laravel tools and resources to AI agents.
+description: Use for any advanced Laravel topic: DDD, CQRS, event sourcing, Octane, Redis at scale, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite, comprehensive testing (unit, feature, Dusk, mutation, architecture), package development, Spatie packages, Scout, Cashier, Pennant, AI integration (Prism, embeddings, RAG, tool calling, streaming), or building MCP servers exposing Laravel tools and resources to AI agents.
 ---
 
 # Laravel Expert
@@ -31,13 +31,13 @@ This skill extends `laravel-specialist`. It assumes all specialist knowledge as 
 
 **Real-Time:** Laravel Reverb, Echo, WebSocket channels, presence channels, SSE, model broadcasting
 
-**Admin Panels:** Filament 3 resources, forms, tables, widgets, multi-tenancy, custom pages
-
 **Security:** OWASP hardening, CSP headers, policies, gates, encryption, SSRF prevention, audit logging
 
-**Testing:** Architecture fitness tests, mutation testing (Infection), parallel tests, Dusk browser tests, contract tests, snapshot tests
+**Testing:** Unit, feature, HTTP, events, jobs, mail, queues, storage, commands, architecture fitness, mutation testing, parallel, Dusk browser tests, contract tests, snapshots, AI/MCP mocking
 
-**Packages & Ecosystem:** Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development
+**Package Development:** Service providers, facades, Testbench, config/migrations/commands, traits, CI matrix, Packagist publishing
+
+**Packages & Ecosystem:** Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags
 
 **AI Integration:** Prism multi-provider LLM, streaming chat, tool calling, structured output, embeddings, RAG pipelines, queued AI jobs, cost tracking
 
@@ -64,11 +64,11 @@ Reference files load based on context:
 | ReactJS & Inertia | `references/reactjs.md` | Inertia.js, React components, SSR, state management with Laravel |
 | TailwindCSS | `references/tailwindcss.md` | Utility-first patterns, custom design system, component variants |
 | Vite | `references/vite.md` | Laravel Vite integration, HMR, asset optimization, SSR bundling |
-| Filament 3 | `references/filament.md` | Admin panels, resources, forms, tables, widgets, multi-tenancy |
 | Broadcasting | `references/broadcasting.md` | Reverb, Echo, channels, presence, SSE, model broadcasting |
 | Security | `references/security.md` | OWASP, CSP, policies, encryption, audit logging, SSRF |
-| Advanced Testing | `references/testing-advanced.md` | Architecture tests, mutation testing, Dusk, contract tests |
-| Packages | `references/packages.md` | Spatie suite, Scout, Cashier, Pennant, package development |
+| Testing | `references/testing.md` | Unit, feature, mocking, Dusk, mutation, architecture, contract tests |
+| Package Development | `references/package-development.md` | Service providers, Testbench, Packagist, CI matrix, versioning |
+| Packages & Ecosystem | `references/packages.md` | Spatie suite, Scout, Cashier, Pennant |
 | AI Integration | `references/ai.md` | Prism, OpenAI, streaming, tool calling, embeddings, RAG, queued AI |
 | MCP Server | `references/mcp.md` | Expose Laravel as MCP server: tools, resources, prompts, auth |
 
