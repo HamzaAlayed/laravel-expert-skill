@@ -71,6 +71,7 @@ Reference files load based on context:
 | Packages & Ecosystem | `references/packages.md` | Spatie suite, Scout, Cashier, Pennant |
 | AI Integration | `references/ai.md` | Prism, OpenAI, streaming, tool calling, embeddings, RAG, queued AI |
 | MCP Server | `references/mcp.md` | Expose Laravel as MCP server: tools, resources, prompts, auth |
+| Laravel Sail | `references/sail.md` | Docker dev environment, services, Xdebug, Dusk, Mailpit, MinIO |
 
 ## Constraints
 

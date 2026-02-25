@@ -8,7 +8,7 @@ The most comprehensive Laravel skill available — covers the entire Laravel eco
 npx skills add HamzaAlayed/laravel-expert-skill
 ```
 
-## What It Covers (17 Reference Files)
+## What It Covers (18 Reference Files)
 
 | Reference | Topics |
 |---|---|
@@ -28,6 +28,7 @@ npx skills add HamzaAlayed/laravel-expert-skill
 | `references/packages.md` | Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags |
 | `references/ai.md` | Prism multi-provider LLM, streaming, tool calling, structured output, embeddings, RAG, queued AI jobs |
 | `references/mcp.md` | Build Laravel as an MCP server: tools, resources, prompts, HTTP/stdio transport, Claude integration |
+| `references/sail.md` | Docker dev environment, services config, Xdebug, Dusk/Selenium, Mailpit, MinIO, performance tips |
 
 ## When to Use
 
