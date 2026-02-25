@@ -1,6 +1,6 @@
 ---
 name: laravel-expert
-description: Use for any advanced Laravel topic beyond basic Eloquent/routing: DDD, CQRS, event sourcing, Octane, Redis at scale, horizontal scaling, Filament admin panels, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite optimization, mutation testing, Dusk, Spatie packages, Scout search, Cashier billing, or Pennant feature flags.
+description: Use for any advanced Laravel topic: DDD, CQRS, event sourcing, Octane, Redis at scale, Filament admin panels, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite, mutation testing, Dusk, Spatie packages, Scout, Cashier, Pennant, AI integration (Prism, embeddings, RAG, tool calling, streaming), or building MCP servers exposing Laravel tools and resources to AI agents.
 ---
 
 # Laravel Expert
@@ -39,6 +39,10 @@ This skill extends `laravel-specialist`. It assumes all specialist knowledge as 
 
 **Packages & Ecosystem:** Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development
 
+**AI Integration:** Prism multi-provider LLM, streaming chat, tool calling, structured output, embeddings, RAG pipelines, queued AI jobs, cost tracking
+
+**MCP Server:** Expose Laravel as an MCP server — define tools, resources, and prompts consumed by Claude Code, Claude Desktop, and other AI agents
+
 ## Core Pattern
 
 Approach every problem in three layers:
@@ -65,6 +69,8 @@ Reference files load based on context:
 | Security | `references/security.md` | OWASP, CSP, policies, encryption, audit logging, SSRF |
 | Advanced Testing | `references/testing-advanced.md` | Architecture tests, mutation testing, Dusk, contract tests |
 | Packages | `references/packages.md` | Spatie suite, Scout, Cashier, Pennant, package development |
+| AI Integration | `references/ai.md` | Prism, OpenAI, streaming, tool calling, embeddings, RAG, queued AI |
+| MCP Server | `references/mcp.md` | Expose Laravel as MCP server: tools, resources, prompts, auth |
 
 ## Constraints
 

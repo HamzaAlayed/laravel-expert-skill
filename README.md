@@ -8,7 +8,7 @@ The most comprehensive Laravel skill available — covers the entire Laravel eco
 npx skills add HamzaAlayed/laravel-expert-skill
 ```
 
-## What It Covers (14 Reference Files)
+## What It Covers (16 Reference Files)
 
 | Reference | Topics |
 |---|---|
@@ -26,6 +26,8 @@ npx skills add HamzaAlayed/laravel-expert-skill
 | `references/security.md` | OWASP Top 10, CSP, gates/policies, encryption, audit logging, SSRF prevention, rate limiting |
 | `references/testing-advanced.md` | Architecture fitness tests, mutation testing (Infection), Dusk browser tests, contract/snapshot tests |
 | `references/packages.md` | Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development |
+| `references/ai.md` | Prism multi-provider LLM, streaming, tool calling, structured output, embeddings, RAG, queued AI jobs |
+| `references/mcp.md` | Build Laravel as an MCP server: tools, resources, prompts, HTTP/stdio transport, Claude integration |
 
 ## When to Use
 
@@ -40,6 +42,8 @@ npx skills add HamzaAlayed/laravel-expert-skill
 - Security: OWASP hardening, CSP, policies, encryption, audit logs
 - Testing: Architecture tests, mutation testing, Dusk, contract tests
 - Ecosystem: Spatie packages, Scout/search, Cashier, Pennant, package dev
+- AI: Prism LLM client, streaming, tool calling, RAG pipelines, embeddings
+- MCP: Expose Laravel as an MCP server for Claude Code / Claude Desktop
 
 **Use `laravel-specialist` for basics:**
 - Standard Eloquent ORM, API resources, Livewire
