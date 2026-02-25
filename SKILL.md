@@ -1,6 +1,6 @@
 ---
 name: laravel-expert
-description: Use when designing Laravel applications requiring advanced architecture patterns (DDD, CQRS, hexagonal/clean architecture, event sourcing), high-throughput performance engineering (Octane, multi-layer caching, Redis cluster), or horizontal scaling strategy. Invoke for bounded context design, write model / read model separation, projections, aggregate roots, optimizing a Laravel system under production load, advanced API design, React with Inertia.js, TailwindCSS component architecture, or Vite asset pipeline optimization.
+description: Use for any advanced Laravel topic beyond basic Eloquent/routing: DDD, CQRS, event sourcing, Octane, Redis at scale, horizontal scaling, Filament admin panels, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite optimization, mutation testing, Dusk, Spatie packages, Scout search, Cashier billing, or Pennant feature flags.
 ---
 
 # Laravel Expert
@@ -21,16 +21,23 @@ This skill extends `laravel-specialist`. It assumes all specialist knowledge as 
 
 ## When to Use This Skill
 
-- Designing bounded contexts and domain models (DDD)
-- Separating write models from read models (CQRS)
-- Implementing event sourcing with projections
-- Structuring a hexagonal / clean architecture in Laravel
-- Selecting and implementing multi-layer caching strategies
-- Planning horizontal scaling for queue workers and web servers
-- Deploying and tuning Laravel Octane (Swoole / FrankenPHP / RoadRunner)
-- Redis at scale: clustering, Lua scripts, pipeline batching, pub/sub
-- Database optimization beyond N+1: partitioning, read replicas, materialized views
-- Making architectural decisions with explicit trade-off analysis
+**Architecture:** DDD bounded contexts, CQRS, event sourcing, hexagonal/clean architecture, aggregate roots, value objects
+
+**Performance & Scale:** Laravel Octane, multi-layer caching, Redis Cluster/Sentinel, read replicas, DB partitioning, horizontal scaling
+
+**Frontend Stack:** React + Inertia.js (SSR, useForm, shared data), TailwindCSS v4 design systems, Vite optimization, Ziggy typed routes
+
+**API:** Versioning, rate limiting, OpenAPI (Scramble), webhooks, API contracts, auth strategies
+
+**Real-Time:** Laravel Reverb, Echo, WebSocket channels, presence channels, SSE, model broadcasting
+
+**Admin Panels:** Filament 3 resources, forms, tables, widgets, multi-tenancy, custom pages
+
+**Security:** OWASP hardening, CSP headers, policies, gates, encryption, SSRF prevention, audit logging
+
+**Testing:** Architecture fitness tests, mutation testing (Infection), parallel tests, Dusk browser tests, contract tests, snapshot tests
+
+**Packages & Ecosystem:** Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development
 
 ## Core Pattern
 
@@ -53,6 +60,11 @@ Reference files load based on context:
 | ReactJS & Inertia | `references/reactjs.md` | Inertia.js, React components, SSR, state management with Laravel |
 | TailwindCSS | `references/tailwindcss.md` | Utility-first patterns, custom design system, component variants |
 | Vite | `references/vite.md` | Laravel Vite integration, HMR, asset optimization, SSR bundling |
+| Filament 3 | `references/filament.md` | Admin panels, resources, forms, tables, widgets, multi-tenancy |
+| Broadcasting | `references/broadcasting.md` | Reverb, Echo, channels, presence, SSE, model broadcasting |
+| Security | `references/security.md` | OWASP, CSP, policies, encryption, audit logging, SSRF |
+| Advanced Testing | `references/testing-advanced.md` | Architecture tests, mutation testing, Dusk, contract tests |
+| Packages | `references/packages.md` | Spatie suite, Scout, Cashier, Pennant, package development |
 
 ## Constraints
 

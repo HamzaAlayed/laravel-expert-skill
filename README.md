@@ -1,10 +1,14 @@
 # laravel-expert
 
-A Claude Code skill for principal-level Laravel architecture, advanced design patterns, and full-stack performance engineering.
+The most comprehensive Laravel skill available — covers the entire Laravel ecosystem from advanced architecture to full-stack frontend, real-time systems, security, and the broader package ecosystem.
 
-## What It Covers
+## Install
 
-This skill extends [`laravel-specialist`](https://github.com/Jeffallan/laravel-specialist) — it assumes all specialist knowledge and starts above that waterline.
+```bash
+npx skills add HamzaAlayed/laravel-expert-skill
+```
+
+## What It Covers (14 Reference Files)
 
 | Reference | Topics |
 |---|---|
@@ -17,21 +21,27 @@ This skill extends [`laravel-specialist`](https://github.com/Jeffallan/laravel-s
 | `references/reactjs.md` | Inertia.js, typed props, `useForm`, shared data, SSR, Zustand, compound components |
 | `references/tailwindcss.md` | Tailwind v4, `@theme` design system, CVA typed variants, dark mode, production optimization |
 | `references/vite.md` | Laravel Vite plugin, path aliases, code splitting, HMR, bundle analysis, Ziggy typed routes |
+| `references/filament.md` | Filament 3 admin panels, resources, forms, tables, widgets, relation managers, multi-tenancy |
+| `references/broadcasting.md` | Laravel Reverb, Echo, private/presence channels, SSE, model broadcasting, notifications |
+| `references/security.md` | OWASP Top 10, CSP, gates/policies, encryption, audit logging, SSRF prevention, rate limiting |
+| `references/testing-advanced.md` | Architecture fitness tests, mutation testing (Infection), Dusk browser tests, contract/snapshot tests |
+| `references/packages.md` | Spatie suite, Scout + Meilisearch, Cashier billing, Pennant feature flags, package development |
 
 ## When to Use
 
-**Use `laravel-expert` when:**
-- Designing bounded contexts, aggregates, or domain models
-- Implementing CQRS, event sourcing, or projection systems
-- Tuning Laravel Octane or diagnosing production performance issues
-- Architecting multi-layer caching or Redis-at-scale strategies
-- Planning horizontal scaling, read replicas, or zero-downtime deployments
-- Building advanced REST APIs with versioning, rate limiting, or OpenAPI docs
-- Integrating React with Inertia.js, including SSR
-- Setting up Tailwind v4 design systems or typed component variants
-- Optimizing Vite builds, code splitting, or SSR bundles
+**Use `laravel-expert` for any advanced Laravel topic:**
 
-**Use `laravel-specialist` instead for:**
+- Architecture: DDD, CQRS, event sourcing, hexagonal/clean architecture
+- Performance: Octane, Redis at scale, multi-layer caching, DB partitioning
+- Frontend: React + Inertia.js, TailwindCSS v4, Vite, SSR
+- API: Versioning, rate limiting, OpenAPI, webhooks, auth strategies
+- Real-time: Reverb WebSockets, Echo, presence channels, SSE
+- Admin: Filament 3 panels, resources, widgets, multi-tenancy
+- Security: OWASP hardening, CSP, policies, encryption, audit logs
+- Testing: Architecture tests, mutation testing, Dusk, contract tests
+- Ecosystem: Spatie packages, Scout/search, Cashier, Pennant, package dev
+
+**Use `laravel-specialist` for basics:**
 - Standard Eloquent ORM, API resources, Livewire
 - Sanctum auth, Horizon queue setup, Pest feature tests
 - Basic REST patterns and CRUD APIs
