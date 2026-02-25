@@ -192,10 +192,10 @@ final class IssueInvoiceHandler
 | Secondary adapter | `EloquentInvoiceRepository` |
 | Application core | Domain + Application layers |
 
-## EventServiceProvider Wiring
+## Event-Listener Wiring
 
 ```php
-// App\Providers\EventServiceProvider.php
+// App\Providers\EventServiceProvider.php (manual registration for custom locations)
 protected $listen = [
     InvoiceWasPaid::class => [
         SendPaymentConfirmationEmail::class,  // Infrastructure listener
@@ -204,7 +204,7 @@ protected $listen = [
 ];
 ```
 
-Domain events are plain PHP objects. Listeners live in Infrastructure. Domain never imports listeners.
+Laravel 11+ auto-discovers listeners in `app/Listeners/` by type-hint. Use `$listen` when listeners live outside that path (e.g. Infrastructure). Domain events are plain PHP objects. Domain never imports listeners.
 
 ## Binding in AppServiceProvider
 

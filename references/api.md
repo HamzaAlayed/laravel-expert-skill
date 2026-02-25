@@ -55,8 +55,12 @@ final class OrderResource extends JsonResource
 ## Rate Limiting
 
 ```php
-// app/Providers/RouteServiceProvider.php
-protected function configureRateLimiting(): void
+// app/Providers/AppServiceProvider.php (Laravel 11+; RouteServiceProvider removed)
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
+
+public function boot(): void
 {
     // Authenticated: 1000 req/min per user
     RateLimiter::for('api', function (Request $request) {

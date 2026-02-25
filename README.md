@@ -1,6 +1,6 @@
 # laravel-expert
 
-The most comprehensive Laravel skill available — covers the entire Laravel ecosystem from advanced architecture to full-stack frontend, real-time systems, security, and the broader package ecosystem.
+The most comprehensive Laravel skill — covers the entire ecosystem from basics (Eloquent, API resources, Livewire, Sanctum, Horizon) to advanced architecture, full-stack frontend, real-time systems, security, and the broader package ecosystem.
 
 ## Install
 
@@ -8,10 +8,14 @@ The most comprehensive Laravel skill available — covers the entire Laravel eco
 npx skills add HamzaAlayed/laravel-expert-skill
 ```
 
-## What It Covers (18 Reference Files)
+## What It Covers (22 Reference Files)
 
 | Reference | Topics |
 |---|---|
+| `references/eloquent.md` | Models, relationships, scopes, custom casts, query optimization, N+1 prevention |
+| `references/routing.md` | Routes, controllers, middleware, form requests, API resources, Sanctum |
+| `references/queues.md` | Jobs, Horizon, batching, chaining, failed jobs, rate limiting |
+| `references/livewire.md` | Components, wire:model, forms, polling, events, file uploads |
 | `references/architecture.md` | DDD, bounded contexts, aggregate roots, value objects, hexagonal/clean architecture, Pest fitness tests |
 | `references/cqrs-eventsourcing.md` | CQRS write/read model separation, command bus, projectors, event store, snapshots |
 | `references/performance.md` | Laravel Octane (Swoole/FrankenPHP/RoadRunner), memory leaks, concurrency, EXPLAIN ANALYZE, k6 load testing |
@@ -32,26 +36,20 @@ npx skills add HamzaAlayed/laravel-expert-skill
 
 ## When to Use
 
-**Use `laravel-expert` for any advanced Laravel topic:**
+**Use `laravel-expert` for any Laravel topic — foundation to advanced:**
 
-- Architecture: DDD, CQRS, event sourcing, hexagonal/clean architecture
-- Performance: Octane, Redis at scale, multi-layer caching, DB partitioning
-- Frontend: React + Inertia.js, TailwindCSS v4, Vite, SSR
-- API: Versioning, rate limiting, OpenAPI, webhooks, auth strategies
-- Real-time: Reverb WebSockets, Echo, presence channels, SSE
-- Admin: Filament 3 panels, resources, widgets, multi-tenancy
-- Security: OWASP hardening, CSP, policies, encryption, audit logs
-- Testing: Architecture tests, mutation testing, Dusk, contract tests
-- Ecosystem: Spatie packages, Scout/search, Cashier, Pennant
-- Testing: Unit, feature, Dusk, mutation, architecture tests, mocking, contracts
-- Package Development: Service providers, Testbench, Packagist, CI, versioning
-- AI: Prism LLM client, streaming, tool calling, RAG pipelines, embeddings
-- MCP: Expose Laravel as an MCP server for Claude Code / Claude Desktop
-
-**Use `laravel-specialist` for basics:**
-- Standard Eloquent ORM, API resources, Livewire
-- Sanctum auth, Horizon queue setup, Pest feature tests
-- Basic REST patterns and CRUD APIs
+- **Basics:** Eloquent ORM, API resources, Livewire, Sanctum auth, Horizon queues, standard REST and CRUD
+- **Architecture:** DDD, CQRS, event sourcing, hexagonal/clean architecture
+- **Performance:** Octane, Redis at scale, multi-layer caching, DB partitioning
+- **Frontend:** React + Inertia.js, Livewire, TailwindCSS v4, Vite, SSR
+- **API:** Versioning, rate limiting, OpenAPI, webhooks, auth strategies
+- **Real-time:** Reverb WebSockets, Echo, presence channels, SSE
+- **Security:** OWASP hardening, CSP, policies, encryption, audit logs
+- **Testing:** Unit, feature, Dusk, mutation, architecture, contract tests, mocking
+- **Ecosystem:** Spatie packages, Scout/search, Cashier, Pennant
+- **Package Development:** Service providers, Testbench, Packagist, CI, versioning
+- **AI:** Prism LLM client, streaming, tool calling, RAG pipelines, embeddings
+- **MCP:** Expose Laravel as an MCP server for Claude Code / Claude Desktop
 
 ## Installation
 
@@ -80,7 +78,11 @@ Point your agent's skills directory to `~/.agents/skills/`.
 Once installed, Claude Code automatically loads this skill when your prompt matches its triggers. You can also invoke it explicitly:
 
 ```
-Use laravel-expert to design the order management bounded context
+Use laravel-expert to build a CRUD API for products with Sanctum auth
+```
+
+```
+Use laravel-expert to design the order management bounded context with CQRS
 ```
 
 ```

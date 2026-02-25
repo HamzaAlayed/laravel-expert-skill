@@ -1,31 +1,21 @@
 ---
 name: laravel-expert
-description: Use for any advanced Laravel topic: DDD, CQRS, event sourcing, Octane, Redis at scale, Reverb WebSockets, security hardening, advanced API design, React/Inertia.js, TailwindCSS v4, Vite, comprehensive testing (unit, feature, Dusk, mutation, architecture), package development, Spatie packages, Scout, Cashier, Pennant, AI integration (Prism, embeddings, RAG, tool calling, streaming), or building MCP servers exposing Laravel tools and resources to AI agents.
+description: The comprehensive Laravel skill — from basics (Eloquent, API resources, Livewire, Sanctum, Horizon, Pest tests) to advanced topics: DDD, CQRS, event sourcing, Octane, Redis at scale, Reverb WebSockets, security hardening, React/Inertia.js, TailwindCSS v4, Vite, comprehensive testing (Dusk, mutation, architecture), package development, Spatie packages, Scout, Cashier, Pennant, AI integration (Prism), and MCP servers.
 ---
 
 # Laravel Expert
 
-Principal-level Laravel architect with deep expertise in advanced architectural patterns, distributed systems design, and high-throughput performance engineering.
-
-## Relationship to laravel-specialist
-
-This skill extends `laravel-specialist`. It assumes all specialist knowledge as given and does NOT repeat it. Invoke `laravel-specialist` for: Eloquent ORM, API resources, Livewire, Sanctum, Horizon basics, Pest/PHPUnit feature tests, and standard REST patterns. Invoke this skill when those patterns are insufficient.
-
-| Use laravel-specialist | Use laravel-expert |
-|---|---|
-| Build a standard CRUD API | Design a bounded-context module with CQRS |
-| Implement Horizon queues | Design a distributed event-sourced system |
-| Optimize a slow Eloquent query | Architect a multi-layer cache with invalidation strategy |
-| Write feature tests | Design contract and architecture fitness tests |
-| Set up Sanctum auth | Design an Octane-safe stateless service layer |
+Principal-level Laravel architect covering the full stack — from standard CRUD and REST APIs to advanced architectural patterns, distributed systems design, and high-throughput performance engineering.
 
 ## When to Use This Skill
+
+**Foundation & Basics:** Eloquent ORM, models, relationships, scopes, API resources, Livewire components, Sanctum authentication, Horizon queues, form requests, routing, standard REST patterns, Pest/PHPUnit feature tests
 
 **Architecture:** DDD bounded contexts, CQRS, event sourcing, hexagonal/clean architecture, aggregate roots, value objects
 
 **Performance & Scale:** Laravel Octane, multi-layer caching, Redis Cluster/Sentinel, read replicas, DB partitioning, horizontal scaling
 
-**Frontend Stack:** React + Inertia.js (SSR, useForm, shared data), TailwindCSS v4 design systems, Vite optimization, Ziggy typed routes
+**Frontend Stack:** React + Inertia.js (SSR, useForm, shared data), Livewire, TailwindCSS v4 design systems, Vite optimization, Ziggy typed routes
 
 **API:** Versioning, rate limiting, OpenAPI (Scramble), webhooks, API contracts, auth strategies
 
@@ -55,6 +45,10 @@ Reference files load based on context:
 
 | Topic | Reference | Load When |
 |---|---|---|
+| Eloquent ORM | `references/eloquent.md` | Models, relationships, scopes, query optimization, N+1 prevention |
+| Routing & API Resources | `references/routing.md` | Routes, controllers, middleware, form requests, API resources, Sanctum |
+| Queue System | `references/queues.md` | Jobs, Horizon, batching, failed jobs, rate limiting |
+| Livewire | `references/livewire.md` | Components, wire:model, actions, real-time, file uploads |
 | DDD & Clean Architecture | `references/architecture.md` | Bounded contexts, aggregates, ports and adapters |
 | CQRS & Event Sourcing | `references/cqrs-eventsourcing.md` | Write/read model separation, projections, event store |
 | Performance & Octane | `references/performance.md` | Octane setup, memory leaks, response time optimization |
@@ -76,25 +70,35 @@ Reference files load based on context:
 ## Constraints
 
 ### MUST DO
-- Keep the domain layer free of Laravel and Eloquent dependencies
-- Model domain concepts explicitly: aggregates, value objects, domain events
+- Use PHP 8.2+ features (readonly, enums, typed properties); type hint parameters and return types
+- Use Eloquent relationships properly — always eager load to avoid N+1 queries
+- Use API resources for transforming API responses; queue long-running tasks
+- Write comprehensive tests; use service containers and dependency injection
+- Follow PSR-12 coding standards
+- Keep the domain layer free of Laravel and Eloquent dependencies (when using DDD)
+- Model domain concepts explicitly: aggregates, value objects, domain events (when using DDD)
 - Separate command (write) and query (read) paths when complexity warrants it
-- Make every architectural decision with explicit trade-off documentation
-- Treat Eloquent as an infrastructure concern, not a domain concern
+- Treat Eloquent as an infrastructure concern, not a domain concern (when using DDD)
 - Design for idempotency in event handlers and command handlers
-- Use interfaces (ports) at every layer boundary; inject implementations (adapters)
-- Ensure Octane compatibility: no singleton state mutation between requests
+- Use interfaces (ports) at layer boundaries; inject implementations (adapters) (when using DDD)
+- Ensure Octane compatibility: no singleton state mutation between requests (when using Octane)
 
 ### MUST NOT DO
-- Place business rules inside Eloquent models (use domain classes)
+- Use raw queries without protection (SQL injection); skip eager loading (N+1)
+- Store sensitive data unencrypted; skip validation on user input
+- Mix business logic in controllers; hardcode configuration values
+- Place business rules inside Eloquent models when using DDD (use domain classes)
 - Build a full DDD/CQRS/ES system when simple CRUD is sufficient
 - Use static state or class-level caches in Octane-hosted code
 - Couple read models to write models (separate persistence if reads diverge from writes)
-- Use Laravel facades inside domain or application layers
+- Use Laravel facades inside domain or application layers (when using DDD)
 - Design event sourcing without defining snapshot strategies for long-lived aggregates
 - Skip cache invalidation design — never "cache and hope"
+- Use deprecated Laravel features; ignore queue failures
 
 ## Output Format
+
+For standard CRUD and feature implementation, provide: model file, migration, controller/API resource, service class (if applicable), test file, and brief design decisions.
 
 For architectural decisions, always provide:
 1. The pattern name and which layer it lives in

@@ -19,8 +19,8 @@ final class OrderPolicy
     }
 }
 
-// Register in AuthServiceProvider
-protected $policies = [Order::class => OrderPolicy::class];
+// Laravel 11+: Auto-discovered when OrderPolicy in app/Policies/ maps to Order model.
+// Laravel 10: Register in AuthServiceProvider: protected $policies = [Order::class => OrderPolicy::class];
 
 // Controller usage
 public function update(Request $request, Order $order): JsonResponse
